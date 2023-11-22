@@ -34,6 +34,10 @@
             New_game_button = new Button();
             DiceBox = new PictureBox();
             panel1 = new Panel();
+            Player2_loc_label = new Label();
+            Player1_loc_label = new Label();
+            label5 = new Label();
+            label6 = new Label();
             Turn_Label = new Label();
             Player2_score = new Label();
             Player1_score = new Label();
@@ -44,10 +48,6 @@
             label2 = new Label();
             Player1 = new PictureBox();
             Player2 = new PictureBox();
-            label6 = new Label();
-            label5 = new Label();
-            Player1_loc_label = new Label();
-            Player2_loc_label = new Label();
             ((System.ComponentModel.ISupportInitialize)BoardBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DiceBox).BeginInit();
             panel1.SuspendLayout();
@@ -115,6 +115,42 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(186, 260);
             panel1.TabIndex = 5;
+            // 
+            // Player2_loc_label
+            // 
+            Player2_loc_label.AutoSize = true;
+            Player2_loc_label.Location = new Point(141, 205);
+            Player2_loc_label.Name = "Player2_loc_label";
+            Player2_loc_label.Size = new Size(13, 15);
+            Player2_loc_label.TabIndex = 9;
+            Player2_loc_label.Text = "1";
+            // 
+            // Player1_loc_label
+            // 
+            Player1_loc_label.AutoSize = true;
+            Player1_loc_label.Location = new Point(141, 178);
+            Player1_loc_label.Name = "Player1_loc_label";
+            Player1_loc_label.Size = new Size(13, 15);
+            Player1_loc_label.TabIndex = 8;
+            Player1_loc_label.Text = "1";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(7, 205);
+            label5.Name = "label5";
+            label5.Size = new Size(91, 15);
+            label5.TabIndex = 7;
+            label5.Text = "Player2 location";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(7, 178);
+            label6.Name = "label6";
+            label6.Size = new Size(91, 15);
+            label6.TabIndex = 6;
+            label6.Text = "Player1 location";
             // 
             // Turn_Label
             // 
@@ -222,42 +258,6 @@
             Player2.TabIndex = 9;
             Player2.TabStop = false;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(7, 178);
-            label6.Name = "label6";
-            label6.Size = new Size(91, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Player1 location";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(7, 205);
-            label5.Name = "label5";
-            label5.Size = new Size(91, 15);
-            label5.TabIndex = 7;
-            label5.Text = "Player2 location";
-            // 
-            // Player1_loc_label
-            // 
-            Player1_loc_label.AutoSize = true;
-            Player1_loc_label.Location = new Point(141, 178);
-            Player1_loc_label.Name = "Player1_loc_label";
-            Player1_loc_label.Size = new Size(13, 15);
-            Player1_loc_label.TabIndex = 8;
-            Player1_loc_label.Text = "1";
-            // 
-            // Player2_loc_label
-            // 
-            Player2_loc_label.AutoSize = true;
-            Player2_loc_label.Location = new Point(141, 205);
-            Player2_loc_label.Name = "Player2_loc_label";
-            Player2_loc_label.Size = new Size(13, 15);
-            Player2_loc_label.TabIndex = 9;
-            Player2_loc_label.Text = "1";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -273,6 +273,7 @@
             Controls.Add(New_game_button);
             Controls.Add(Roll_button);
             Controls.Add(BoardBox);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Snake and ladder";
